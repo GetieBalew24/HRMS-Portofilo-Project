@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MAUHRMS_DB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Account_Applicant" Member="Account_Applicants">
+    <Type Name="Account_Applicant">
+      <Column Name="UsernameApplicant" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PasswordApplicant" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailApplicant" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Table]" Member="Tables">
+    <Type Name="Table">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dept_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Employee_Image" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Applicant" Member="TBL_Applicants">
+    <Type Name="TBL_Applicant">
+      <Column Name="Applicant_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Applicant_FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_MiddleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_Sex" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_FieldOfStudy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_CGPA" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Applicant_Experience" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="CV" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="JobPost_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HRE_Approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DH_Approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TBL_Applicant_TBL_Candidate" Member="TBL_Candidates" ThisKey="Applicant_Id" OtherKey="Applicant_Id" Type="TBL_Candidate" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Attendance" Member="TBL_Attendances">
+    <Type Name="TBL_Attendance">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MonthAndYear" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DaysOfWork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DaysOnWork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SickLeave" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnTraining" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnMeeting" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ToStudyAbroad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualLeave" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WithoutAnnualLeave" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnFieldWork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CD_approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HRE_approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Candidate" Member="TBL_Candidates">
+    <Type Name="TBL_Candidate">
+      <Column Name="Candidate_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Applicant_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Candidate_FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Candidate_MiddleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Candidate_LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Candidate_Result" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Candidate_Sex" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stream" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TBL_Applicant_TBL_Candidate" Member="TBL_Applicant" ThisKey="Applicant_Id" OtherKey="Applicant_Id" Type="TBL_Applicant" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Collage" Member="TBL_Collages">
+    <Type Name="TBL_Collage">
+      <Column Name="Collage_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="College_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="College_Location" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TBL_Collage_TBL_Department" Member="TBL_Departments" ThisKey="Collage_Id" OtherKey="College_Id" Type="TBL_Department" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ContractRenewalRequest" Member="TBL_ContractRenewalRequests">
+    <Type Name="TBL_ContractRenewalRequest">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Deal" Member="TBL_Deals">
+    <Type Name="TBL_Deal">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Training_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Referee_FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_MiddleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_Region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_Zone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_Kebele" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_HouseNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Referee_PhoneNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TermsAndConditions" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Employee" Member="TBL_Employees">
+    <Type Name="TBL_Employee">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="BP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stream" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousPosition" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Zone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Kebele" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HouseNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InstitutionStudied" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FieldOfStudy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiplomaAwarded" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IDEbyMAU" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Dept_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MartialStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NoOfChildren" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JobStatus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NewPostitionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TBL_Employee_TBL_ExperienceRequest" Member="TBL_ExperienceRequests" ThisKey="Employee_Id" OtherKey="Employee_Id" Type="TBL_ExperienceRequest" />
+      <Association Name="TBL_Employee_TBL_UserAccount" Member="TBL_UserAccounts" ThisKey="Employee_Id" OtherKey="Employee_Id" Type="TBL_UserAccount" />
+      <Association Name="TBL_Department_TBL_Employee" Member="TBL_Department" ThisKey="Dept_Id" OtherKey="Dept_Id" Type="TBL_Department" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Department" Member="TBL_Departments">
+    <Type Name="TBL_Department">
+      <Column Name="Dept_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Dept_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="College_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TBL_Department_TBL_Employee" Member="TBL_Employees" ThisKey="Dept_Id" OtherKey="Dept_Id" Type="TBL_Employee" />
+      <Association Name="TBL_Collage_TBL_Department" Member="TBL_Collage" ThisKey="College_Id" OtherKey="Collage_Id" Type="TBL_Collage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_EmployeeLeave" Member="TBL_EmployeeLeaves">
+    <Type Name="TBL_EmployeeLeave">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stream" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Achivements" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="IDEMAU" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="LDAT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Dept_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ReasonOfLeave" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ExperienceRequest" Member="TBL_ExperienceRequests">
+    <Type Name="TBL_ExperienceRequest">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DH_Approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_Approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AVP_Approval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TBL_Employee_TBL_ExperienceRequest" Member="TBL_Employee" ThisKey="Employee_Id" OtherKey="Employee_Id" Type="TBL_Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_GenerateID" Member="TBL_GenerateIDs">
+    <Type Name="TBL_GenerateID">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Dept" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Employee_Image" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Reg_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_JobPost" Member="TBL_JobPosts">
+    <Type Name="TBL_JobPost">
+      <Column Name="JobPost_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ExamDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Notice" Member="TBL_Notices">
+    <Type Name="TBL_Notice">
+      <Column Name="Notice_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NDescription" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="NPostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NLocation" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Menu" Member="TBL_Menus">
+    <Type Name="TBL_Menu">
+      <Column Name="MenuId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentMenu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MenuName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Link" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TBL_Menu_TBL_UsermenuRole" Member="TBL_UsermenuRoles" ThisKey="MenuId" OtherKey="MenuId" Type="TBL_UsermenuRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Role" Member="TBL_Roles">
+    <Type Name="TBL_Role">
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TBL_UserAccount_TBL_Role" Member="TBL_UserAccount" ThisKey="Username" OtherKey="Username" Type="TBL_UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Training" Member="TBL_Trainings">
+    <Type Name="TBL_Training">
+      <Column Name="Training_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Training_Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Training_Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_UserAccount" Member="TBL_UserAccounts">
+    <Type Name="TBL_UserAccount">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Role" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Security_Question" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Security_Answer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TBL_UserAccount_TBL_Role" Member="TBL_Roles" ThisKey="Username" OtherKey="Username" Type="TBL_Role" />
+      <Association Name="TBL_UserAccount_TBL_UsermenuRole" Member="TBL_UsermenuRoles" ThisKey="Username" OtherKey="Username" Type="TBL_UsermenuRole" />
+      <Association Name="TBL_Employee_TBL_UserAccount" Member="TBL_Employee" ThisKey="Employee_Id" OtherKey="Employee_Id" Type="TBL_Employee" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_UsermenuRole" Member="TBL_UsermenuRoles">
+    <Type Name="TBL_UsermenuRole">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="TBL_Menu_TBL_UsermenuRole" Member="TBL_Menu" ThisKey="MenuId" OtherKey="MenuId" Type="TBL_Menu" IsForeignKey="true" />
+      <Association Name="TBL_UserAccount_TBL_UsermenuRole" Member="TBL_UserAccount" ThisKey="Username" OtherKey="Username" Type="TBL_UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_Vaccancy" Member="TBL_Vaccancies">
+    <Type Name="TBL_Vaccancy">
+      <Column Name="Vacc_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dept" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Criteria" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NoVaccancy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CD_Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AVP_Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.registerGeneratedID" Method="registerGeneratedID">
+    <Parameter Name="empid" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="dept" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="img" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="reg_date" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ADDJOBPOST" Method="SP_ADDJOBPOST">
+    <Parameter Name="Location" Parameter="location" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PostedDate" Parameter="postedDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ADDNOTICE" Method="SP_ADDNOTICE">
+    <Parameter Name="NLocation" Parameter="nLocation" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NTitle" Parameter="nTitle" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NDescription" Parameter="nDescription" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NPostedDate" Parameter="nPostedDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ADDTRAINING" Method="SP_ADDTRAINING">
+    <Parameter Name="Training_Title" Parameter="training_Title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Training_Description" Parameter="training_Description" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PostedDate" Parameter="postedDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ADDVACANCY" Method="SP_ADDVACANCY">
+    <Parameter Name="Dept" Parameter="dept" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Criteria" Parameter="criteria" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NoOfVacc" Parameter="noOfVacc" Type="System.Int32" DbType="Int" />
+    <Parameter Name="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_APPLY" Method="SP_APPLY">
+    <Parameter Name="Applicant_FirstName" Parameter="applicant_FirstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Applicant_MiddleName" Parameter="applicant_MiddleName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Applicant_LastName" Parameter="applicant_LastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Applicant_Sex" Parameter="applicant_Sex" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Applicant_FieldOfStudy" Parameter="applicant_FieldOfStudy" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Applicant_CGPA" Parameter="applicant_CGPA" Type="System.Double" DbType="Float" />
+    <Parameter Name="Applicant_Experience" Parameter="applicant_Experience" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="CV" Parameter="cV" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="JobPost" Parameter="jobPost" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ASSIGNROLE" Method="SP_ASSIGNROLE">
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="MenuId" Parameter="menuId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AssignedBy" Parameter="assignedBy" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Date" Parameter="date" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_CDAPPROVEEXPR" Method="SP_CDAPPROVEEXPR">
+    <ElementType Name="SP_CDAPPROVEEXPRResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_CDEXPERIENCEAPPROVAL" Method="SP_CDEXPERIENCEAPPROVAL">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DH_Approval" Parameter="dH_Approval" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_CHANGEPASSWORD" Method="SP_CHANGEPASSWORD">
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_COLLAGE" Method="SP_COLLAGE">
+    <Parameter Name="Collage_Id" Parameter="collage_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="College_Name" Parameter="college_Name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="College_Location" Parameter="college_Location" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_CONTRACTREQUEST" Method="SP_CONTRACTREQUEST">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Reason" Parameter="reason" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="RequestDate" Parameter="requestDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_CREATEACCOUNT" Method="SP_CREATEACCOUNT">
+    <Parameter Name="Emp_id" Parameter="emp_id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Role" Parameter="role" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_DEPT" Method="SP_DEPT">
+    <Parameter Name="Dept_Id" Parameter="dept_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Dept_Name" Parameter="dept_Name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="College_Id" Parameter="college_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_DEAL" Method="SP_DEAL">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Training_Id" Parameter="training_Id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Referee_FirstName" Parameter="referee_FirstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_MiddleName" Parameter="referee_MiddleName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_LastName" Parameter="referee_LastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_Region" Parameter="referee_Region" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_Zone" Parameter="referee_Zone" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_Kebele" Parameter="referee_Kebele" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_HouseNo" Parameter="referee_HouseNo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Referee_PhoneNo" Parameter="referee_PhoneNo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TermsAndConditions" Parameter="termsAndConditions" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PostedDate" Parameter="postedDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_DHEXPERIENCEAPPROVAL" Method="SP_DHEXPERIENCEAPPROVAL">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DH_Approval" Parameter="dH_Approval" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_DHAPPROVEEXPR" Method="SP_DHAPPROVEEXPR">
+    <ElementType Name="SP_DHAPPROVEEXPRResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_EXPERIENCEREQUEST" Method="SP_EXPERIENCEREQUEST">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Reason" Parameter="reason" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="RequestDate" Parameter="requestDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_LEAVEREGISTER" Method="SP_LEAVEREGISTER">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="MiddleName" Parameter="middleName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Stream" Parameter="stream" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Position" Parameter="position" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Achivements" Parameter="achivements" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="IDEMAU" Parameter="iDEMAU" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="LDAT" Parameter="lDAT" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Dept_Id" Parameter="dept_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Salary" Parameter="salary" Type="System.Double" DbType="Float" />
+    <Parameter Name="ReasonOfLeave" Parameter="reasonOfLeave" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_GENERATEID" Method="SP_GENERATEID">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Dept_Name" Parameter="dept_Name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Employee_Image" Parameter="employee_Image" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="regdate" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_NEWAPPLICANT" Method="SP_NEWAPPLICANT">
+    <Parameter Name="UsernameApplicant" Parameter="usernameApplicant" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PasswordApplicant" Parameter="passwordApplicant" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EmailApplicant" Parameter="emailApplicant" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MENUREGISTRATION" Method="SP_MENUREGISTRATION">
+    <Parameter Name="MenuId" Parameter="menuId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="ParentMenu" Parameter="parentMenu" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="MenuName" Parameter="menuName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Link" Parameter="link" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_REGERSTEREMPLOYEE" Method="SP_REGERSTEREMPLOYEE">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="MiddleName" Parameter="middleName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="BP" Parameter="bP" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Stream" Parameter="stream" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Position" Parameter="position" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Region" Parameter="region" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Zone" Parameter="zone" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Kebele" Parameter="kebele" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="HouseNo" Parameter="houseNo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="InstitutionStudied" Parameter="institutionStudied" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FieldOfStudy" Parameter="fieldOfStudy" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="DiplomaAwarded" Parameter="diplomaAwarded" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDE" Parameter="iDE" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IDEbyMAU" Parameter="iDEbyMAU" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Dept_Id" Parameter="dept_Id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Salary" Parameter="salary" Type="System.Double" DbType="Float" />
+    <Parameter Name="MartialStatus" Parameter="martialStatus" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NoOfChildren" Parameter="noOfChildren" Type="System.Int32" DbType="Int" />
+    <Parameter Name="JobStatus" Parameter="jobStatus" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_REMOVEFORMEREMPLOYEE" Method="SP_REMOVEFORMEREMPLOYEE">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RETRIVEMPINFO" Method="SP_RETRIVEMPINFO">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="SP_RETRIVEMPINFOResult">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="BP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stream" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousPosition" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Zone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Kebele" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HouseNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InstitutionStudied" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FieldOfStudy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiplomaAwarded" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IDEbyMAU" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Dept_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MartialStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NoOfChildren" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JobStatus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NewPostitionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_SECURITYQUESTION" Method="SP_SECURITYQUESTION">
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Security_Question" Parameter="security_Question" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Security_Answer" Parameter="security_Answer" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_SELECTEMPLOYEEBYID" Method="SP_SELECTEMPLOYEEBYID">
+    <Parameter Name="Employee_Id" Parameter="employee_Id" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="SP_SELECTEMPLOYEEBYIDResult">
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousPosition" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_VIEWJOBPOST" Method="SP_VIEWJOBPOST">
+    <ElementType Name="SP_VIEWJOBPOSTResult">
+      <Column Name="JobPost_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ExamDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_VIEWNOTICE" Method="SP_VIEWNOTICE">
+    <ElementType Name="SP_VIEWNOTICEResult">
+      <Column Name="Notice_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NDescription" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="NPostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NLocation" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_VIEWTRAINING" Method="SP_VIEWTRAINING">
+    <ElementType Name="SP_VIEWTRAININGResult">
+      <Column Name="Training_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Training_Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Training_Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_VIEWVACCANCYREQUEST" Method="SP_VIEWVACCANCYREQUEST">
+    <ElementType Name="SP_VIEWVACCANCYREQUESTResult">
+      <Column Name="Vacc_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Dept" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Criteria" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NoVaccancy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Employee_Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CD_Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AVP_Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

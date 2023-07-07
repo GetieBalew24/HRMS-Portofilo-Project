@@ -1,0 +1,244 @@
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\MAU HRMS Final Project.pdb
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csc.exe
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csc.exe.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csc.rsp
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csi.exe
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csi.exe.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\csi.rsp
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.AppContext.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Console.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Net.Http.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\vbc.exe
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\vbc.exe.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\vbc.rsp
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Antlr3.Runtime.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Newtonsoft.Json.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\System.Web.Optimization.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Telerik.Web.UI.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\WebGrease.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\System.Web.Optimization.xml
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Newtonsoft.Json.xml
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Antlr3.Runtime.pdb
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CopyComplete
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.pdb
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BLL_HRMS.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BOL_HRMS.dll
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BLL_HRMS.pdb
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BLL_HRMS.dll.config
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BOL_HRMS.pdb
+C:\Users\User\source\repos\MAU HRMS Final Project\bin\BOL_HRMS.dll.config
+C:\Users\User\source\repos\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll.licenses
+E:\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll.config
+E:\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll
+E:\MAU HRMS Final Project\bin\MAU HRMS Final Project.pdb
+E:\MAU HRMS Final Project\bin\roslyn\csc.exe
+E:\MAU HRMS Final Project\bin\roslyn\csc.exe.config
+E:\MAU HRMS Final Project\bin\roslyn\csc.rsp
+E:\MAU HRMS Final Project\bin\roslyn\csi.exe
+E:\MAU HRMS Final Project\bin\roslyn\csi.exe.config
+E:\MAU HRMS Final Project\bin\roslyn\csi.rsp
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MAU HRMS Final Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.AppContext.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Collections.Immutable.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Console.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Net.Http.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Net.Sockets.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.ValueTuple.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.dll
+E:\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MAU HRMS Final Project\bin\roslyn\vbc.exe
+E:\MAU HRMS Final Project\bin\roslyn\vbc.exe.config
+E:\MAU HRMS Final Project\bin\roslyn\vbc.rsp
+E:\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe
+E:\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe.config
+E:\MAU HRMS Final Project\bin\Antlr3.Runtime.dll
+E:\MAU HRMS Final Project\bin\AspNet.ScriptManager.jQuery.dll
+E:\MAU HRMS Final Project\bin\BLL_HRMS.dll
+E:\MAU HRMS Final Project\bin\BOL_HRMS.dll
+E:\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\MAU HRMS Final Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MAU HRMS Final Project\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\MAU HRMS Final Project\bin\Microsoft.ScriptManager.WebForms.dll
+E:\MAU HRMS Final Project\bin\Microsoft.Web.Infrastructure.dll
+E:\MAU HRMS Final Project\bin\Newtonsoft.Json.dll
+E:\MAU HRMS Final Project\bin\System.Web.Optimization.dll
+E:\MAU HRMS Final Project\bin\WebGrease.dll
+E:\MAU HRMS Final Project\bin\BLL_HRMS.pdb
+E:\MAU HRMS Final Project\bin\BLL_HRMS.dll.config
+E:\MAU HRMS Final Project\bin\BOL_HRMS.pdb
+E:\MAU HRMS Final Project\bin\BOL_HRMS.dll.config
+E:\MAU HRMS Final Project\bin\System.Web.Optimization.xml
+E:\MAU HRMS Final Project\bin\Newtonsoft.Json.xml
+E:\MAU HRMS Final Project\bin\Antlr3.Runtime.pdb
+E:\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.AssemblyReference.cache
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll.licenses
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CoreCompileInputs.cache
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CopyComplete
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll
+E:\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.pdb
+E:\MAU HRMS Final Project\bin\itextsharp.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\MAU HRMS Final Project.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\MAU HRMS Final Project.pdb
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csc.exe
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csc.exe.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csc.rsp
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csi.exe
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csi.exe.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\csi.rsp
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\roslyn                                                                                                                                                .exe
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.AppContext.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Collections.Immutable.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Console.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Net.Http.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Net.Sockets.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.ValueTuple.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\Unhide Files.bat
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\vbc.exe
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\vbc.exe.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\vbc.rsp
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\roslyn\VBCSCompiler.exe.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Antlr3.Runtime.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\AspNet.ScriptManager.jQuery.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BLL_HRMS.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BOL_HRMS.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.Web.Infrastructure.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Newtonsoft.Json.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\System.Web.Optimization.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\WebGrease.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BLL_HRMS.pdb
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BLL_HRMS.dll.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BOL_HRMS.pdb
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\BOL_HRMS.dll.config
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\System.Web.Optimization.xml
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Newtonsoft.Json.xml
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Antlr3.Runtime.pdb
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.AssemblyReference.cache
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll.licenses
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CoreCompileInputs.cache
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.csproj.CopyComplete
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.dll
+E:\Selam Project\Selam v-3\MAU HRMS Final Project\obj\Debug\MAU HRMS Final Project.pdb
